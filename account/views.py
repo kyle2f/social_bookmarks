@@ -35,7 +35,7 @@ from .forms import LoginForm, UserRegistrationForm
 
 def register(request):
     user_form = None
-    if (request.method == 'GET'):
+    if (request.method == 'POST'):
         user_form = UserRegistrationForm(request.POST)
         if user_form.is_valid():
             #Create a new user object but avoid saving it yet

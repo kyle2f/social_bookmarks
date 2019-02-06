@@ -4,7 +4,7 @@
 {% block content %}
     <h1> Create an account </h1>
     <p> Please, sign up using the foollowing form </p>
-    <form action="." method="POST">
+    <form method="POST"  action="." >
         {{ user_form.as_p }}
         {% csrf_token %}
         <p><input type="submit" value="Create my account"></p>
